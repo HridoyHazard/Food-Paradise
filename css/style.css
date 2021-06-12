@@ -1,0 +1,145 @@
+#container{
+    width: 1050px;
+    margin: 0 auto;
+}
+h1 a{
+    font-weight: 100px;
+    font-size: 50px;
+    color: #a86f32;
+    text-decoration: none;
+}
+#searchbox{
+    float: right;
+    background: linear-gradient(#c5f542,#b6f542);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+}
+#header{
+    height: 100px;  
+}
+#brand{
+    float: left;
+}
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #c5f542;
+    background:white url(img/search.png) right center no-repeat;
+    border: none;
+    
+}
+.submit{
+    float: right;
+    padding: 5px;
+    background-color: #f59642;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.clear{
+    clear: both;
+}
+#menu{
+    height: 70px;
+    background:linear-gradient(#F8F594, #D5D533);
+    padding:7px 0px;
+}
+ul{
+    list-style: none;
+}
+#menu ul li
+{
+    float: left;
+    padding: 0px 30px;
+    height: 30px;
+    border-right:1px solid #861BBF;
+
+}
+#menu ul li:last-child{
+    border-right: none;
+}
+#menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #861BBF;
+    line-height: 30px;
+    transition: font-size 0.3s ease;
+}
+#menu ul li a:hover,#menu ul li a.active{
+    font-size: 22px;
+    font-weight: bold;
+}
+#intro
+{
+    background:linear-gradient(#E5F2BB, #B7E952);
+    padding:30px;
+    margin-top:20px;
+}
+#intro h3{
+    color: cadetblue;
+    font-size:30px;
+    text-align:center;
+}
+#intro p{
+    font-size:25px;
+    color:#0a3b16;
+
+}
+.sidebar{
+    height:500px;
+    width:450px;
+    border:1px solid green;
+    margin-top:20px;
+    border-radius:20px;
+    padding:10px 30px
+
+}
+.sidebar h3{
+    font-size:30px;
+    color:#85d485;
+}
+.sidebar ul li a{
+    text-decoration:none;
+    font-size:20px;
+    color:#861BBF;
+    transition:font-size 0.3s ease;
+}
+.sidebar ul li a:hover{
+    text-decoration: none;
+    font-size: 23px;
+    color:#861BBF;
+    font-weight:bold;
+}
+#leftside{
+    float:left;
+}
+#rightside{
+    float:right;
+}
+#leftside ul
+{
+    padding-top:8px;
+}
+#leftside ul li{
+    padding: 4px 0 4px 10px;
+    list-style-image:url(img/arrow.png);
+}
+#rightside ul li{
+    padding:17px 0 17px 70px;
+    background: url(img/tick.png) no-repeat left center;
+}
+.footer{
+    height:50px;
+    background:linear-gradient(#bfd485,#aad485);
+    padding:10px;
+    margin-top:10px;
+}
+.footer p{
+    font-size:15px;
+    text-align:center;
+    color:#603d0f
+}
