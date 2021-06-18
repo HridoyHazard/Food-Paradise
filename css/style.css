@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     text-decoration: none;
@@ -25,15 +25,19 @@ section{
 }
 header{
     position: fixed;
-    top:0; left:0;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    width:100%;
-    background:#fff;
-    padding:1.5rem 10%;
-    box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+    width: 100%;
+    background: #fff;
+    padding: 0.2rem 2%;
+    box-shadow: 0 0.3rem 2rem rgb(0 0 0 / 10%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+header .logo img{
+    height:6rem;
 }
 
 header .navbar ul{
@@ -52,29 +56,57 @@ header .navbar ul li a{
     color:#666;
 }
 
-header .navbar ul li a.active,
 header .navbar ul li a:hover{
     color: #58c93a;
 }
 
-header #menu-bar{
+#menu-bar{
     font-size: 3rem;
     color:#666;
     cursor: pointer;
     display: none;
 }
+#home
+{
+   
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3)));
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+        position: relative;
+    
+}
+#home .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  #home .video-container .vid {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+      
+  }
+  
 .content{
     text-align: center;
+    margin-top: 8.5rem;
 
 }
-.content h3{
-    font-size: 30px;
+.content h1{
     font-weight: bold;
     color:#F7CA3E;
+    font-size: 5rem;
+
 }
 .content p{
     color:#F7CA3E;
-    font-size: 18px;
+    font-size: 2.5rem;
 }
 .btn
 {
@@ -111,24 +143,60 @@ header #menu-bar{
 .btn:hover::before {
     width: 100%;
   }
-#home .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: -1;
+  .product .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1.5rem;
+}
+.product .box-container .box{
+   /* border:.1rem solid rgba(0,0,0,.1);  */
+    margin:2rem;
+    background:#fff;
+    width: 32rem;
+    text-align: center;
+  
+}
+.product .box-container .box:hover{
+    transform: scale(1.1);
 }
 
-#home .video-container .vid {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: none;
+.product .box-container .box img{
+    height:28rem;
+    width:32rem;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
-#home .video-container .vid1 {
-  display: block;
+.product .box-container .box h3{
+    font-size: 2rem;
+    color:var(--green);
+}
+
+.product .box-container .box .icons{
+    padding:1rem 0;
+}
+
+.product .box-container .box .icons a{
+    font-size: 1.5rem;
+    color:#666;
+    height:5rem;
+    width:5rem;
+    line-height: 5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.5rem;
+}
+
+.product .box-container .box .icons a:hover{
+    background:#eee;
+}
+.product .box-container .box .icons a:active{
+    background:rgb(226, 66, 66)129, 33, 33);
 }
