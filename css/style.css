@@ -8,10 +8,21 @@
     transition:all .2s linear;
 }
 
-h1, h3{
+h1{
     font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1.5rem;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color:var(--green);
+
 }
 html{
+    scroll-behavior: smooth;
     font-size: 62.5%;
     overflow-x: hidden;
 }
@@ -28,7 +39,7 @@ html::-webkit-scrollbar-thumb{
 }
 body{
     overflow-x: hidden;
-position:relative;
+    position:relative;
 }
 section{
     min-height: 100vh;
@@ -146,19 +157,14 @@ header .navbar a:hover{
 .btn:hover::before {
     width: 100%;
   }
-  .product .box-container{
+  .recipe .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.product h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    padding: 1.5rem;
-}
-.product .box-container .box{
+
+.recipe .box-container .box{
    /* border:.1rem solid rgba(0,0,0,.1);  */
     margin:2rem;
     background:#fff;
@@ -166,27 +172,21 @@ header .navbar a:hover{
     text-align: center;
   
 }
-.product .box-container .box:hover{
+.recipe .box-container .box:hover{
     transform: scale(1.1);
 }
 
-.product .box-container .box img{
+.recipe .box-container .box img{
     height:28rem;
     width:32rem;
     object-fit: cover;
     border-radius: 1rem;
 }
-
-.product .box-container .box h3{
-    font-size: 2rem;
-    color:var(--green);
-}
-
-.product .box-container .box .icons{
+.recipe .box-container .box .icons{
     padding:1rem 0;
 }
 
-.product .box-container .box .icons a{
+.recipe .box-container .box .icons a{
     font-size: 1.5rem;
     color:#666;
     height:5rem;
@@ -199,10 +199,10 @@ header .navbar a:hover{
 .box .liked{
     color: red !important;
 }
-.product .box-container .box .icons a:hover{
+.recipe .box-container .box .icons a:hover{
     background:#eee;
 }
-.product .box-container .box .icons a:active{
+.recipe .box-container .box .icons a:active{
     background:rgb(226, 66, 66)129, 33, 33);
 }
 #popUp{
@@ -254,6 +254,139 @@ header .navbar a:hover{
     transition: all linear .5s;
     
 }
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    padding-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+section ul{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+section ul li
+{
+    list-style: none;
+    background-color: #eee;
+    padding: 15px 40px;
+    margin: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: inline;
+    font-size: 2.5vh;
+    border-radius: 8vh;
+}
+section ul li.active{
+    background:#03a9fa;
+    color:#fff;
+}
+.ps{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ps .itemBox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: block;
+    overflow: hidden;
+}
+.ps .itemBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 4px 4px;
+    vertical-align: middle;
+}
+.ps .itemBox:hover img
+{
+    transform: scale(1.1);
+}
+
+/*===================*/
+
+.preview-box{
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  width: 800px;
+  height: 700px;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+  height: 768px;
+  width: auto;
+}
+.preview-box .details{
+  padding: 13px 15px 13px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  font-weight: 500;
+  margin-left: 5px;
+}
+.details .icon{
+  color: #007bff;
+  font-style: 22px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  width: 100%;
+  height: 93%;
+  display: flex;
+}
+.image-box img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.4);
+}
+.shadow.show{
+  display: block;
+}
+
+
+
+
 
 /* Media Queries */
 
@@ -317,6 +450,9 @@ header .navbar a:hover{
     }
 
     .home .content{
+        width: auto;
+    }
+    .gallery{
         width: auto;
     }
 

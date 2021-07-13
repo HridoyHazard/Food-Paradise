@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 </head>
 
 <body>
@@ -22,12 +21,12 @@
         <div id="menu" class="fas fa-bars"></div>
 
         <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#recipe">Recipe</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#signup">Sign Up</a>
+            <a href="#home">Home</a>
+            <a href="#recipe">Recipe</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#signup">Sign Up</a>
         </nav>
 
     </header>
@@ -35,9 +34,9 @@
     <!-- Home Page Section-->
 
     <section id="home">
-       <div class="video-container">
+        <div class="video-container">
             <video src="img/v1.mp4" autoplay loop class="vid vid1"></video>
-       </div>
+        </div>
 
         <div class="content">
             <h1>Welcome To Food Paradies</h1>
@@ -50,7 +49,7 @@
 
     <!-- Recipe Section-->
 
-    <section class="product" id="product">
+    <section class="recipe" id="recipe">
 
         <h1 class="heading">Featured Recipes</h1>
 
@@ -128,9 +127,61 @@
         </div>
 
     </section>
+
+    <!-- Gallyer Section-->
+    <section class="gallery" id="gallery">
+        <h1>Gallery</h1>
+        <ul>
+            <li class="list active" data-filter="All">All</li>
+            <li class="list" data-filter="dessert">Dessert</li>
+            <li class="list" data-filter="soup">Soup</li>
+            <li class="list" data-filter="salad">Salad</li>
+            <li class="list" data-filter="biryani">Biryani</li>
+            <li class="list" data-filter="fastfood">FastFood</li>
+        </ul>
+        <div class="ps">
+            <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert1.jpg"></div>
+            <div class="itemBox soup" data-cat="soup"><img src="img/soup1.jpg"></div>
+            <div class="itemBox salad" data-cat="salad"><img src="img/salad1.jpg"></div>
+            <div class="itemBox biryani" data-cat="biryani"><img src="img/biryani1.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood1.jpg"></div>
+            <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert2.jpg"></div>
+            <div class="itemBox soup" data-cat="soup"><img src="img/soup2.jpg"></div>
+            <div class="itemBox salad" data-cat="salad"><img src="img/salad2.jpg"></div>
+            <div class="itemBox biryani" data-cat="biryani"><img src="img/biryani2.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood2.jpg"></div>
+            <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert3.jpg"></div>
+            <div class="itemBox soup" data-cat="soup"><img src="img/soup3.jpg"></div>
+            <div class="itemBox salad" data-cat="salad"><img src="img/salad3.jpg"></div>
+            <div class="itemBox biryani" data-cat="biryani"><img src="img/biryani3.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood3.jpg"></div>
+            <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert4.jpg"></div>
+            <div class="itemBox salad" data-cat="salad"><img src="img/salad4.jpg"></div>
+            <div class="itemBox biryani" data-cat="biryani"><img src="img/biryani4.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood4.jpg"></div>
+            <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert6.jpg"></div>
+            <div class="itemBox soup" data-cat="soup"><img src="img/soup4.jpg"></div>
+            <div class="itemBox salad" data-cat="salad"><img src="img/salad5.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood5.jpg"></div>
+            <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert7.jpg"></div>
+            <div class="itemBox soup" data-cat="soup"><img src="img/soup5.jpg"></div>
+            <div class="itemBox salad" data-cat="salad"><img src="img/salad6.jpg"></div>
+            <div class="itemBox biryani" data-cat="biryani"><img src="img/biryani5.jpg"></div>
+            <div class="itemBox soup" data-cat="soup"><img src="img/soup6.jpg"></div>
+            <div class="itemBox biryani" data-cat="biryani"><img src="img/biryani7.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood7.jpg"></div>
+            <div class="itemBox soup" data-cat="soup"><img src="img/soup7.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood8.jpg"></div>
+            <div class="itemBox biryani" data-cat="biryani"><img src="img/biryani6.jpg"></div>
+            <div class="itemBox fastfood" data-cat="fast food"><img src="img/fastfood9.jpg"></div>
+            <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert8.jpg"></div>
+            
+        </div>
+
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/gallary.js"></script>
 </body>
 
 </html>
