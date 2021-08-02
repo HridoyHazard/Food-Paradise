@@ -140,7 +140,7 @@
             <li class="list" data-filter="biryani">Biryani</li>
             <li class="list" data-filter="fastfood">FastFood</li>
         </ul>
-        <div class="ps">
+        <div class="ps" data-aos="zoom-in">
             <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert1.jpg"></div>
             <div class="itemBox soup" data-cat="soup"><img src="img/soup1.jpg"></div>
             <div class="itemBox salad" data-cat="salad"><img src="img/salad1.jpg"></div>
@@ -330,9 +330,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 60, once: false, disable: 'phone', duration: 1500,
-            initClassName: 'aos-init',
-            animatedClassName: 'aos-animate',
+            offset: 60, once: false, duration: 2000,
             useClassNames: false,
             disableMutationObserver: false,
             debounceDelay: 50,
