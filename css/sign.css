@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#signInSignUpBox {
+  position: relative;
+  background-color: pink;
+  width: 800px;
+  height: 510px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#overlay {
+  left: 0;
+  border: 1px solid blue;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+#signUp {
+  transform: translateX(0);
+  transition-duration: 1s;
+}
+
+#signIn {
+  transform: translateX(20%);
+  transition-duration: 1s;
+}
+
+.overlay-moveHalfRight #signIn {
+  transform: translateX(0);
+  transition-duration: 1s;
+}
+
+.overlay-moveHalfRight {
+  animation-name: move-slide-right;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes move-slide-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+.overlayInner-moveHalfLeft #signUp {
+  transform: translateX(-20%);
+  transition-duration: 1s;
+}
+
+.overlay-moveHalfLeft {
+  animation-name: move-slide-back-right;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes move-slide-back-right {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#overlayInner {
+  position: absolute;
+  width: 200%;
+  display: flex;
+}
+
+.overlayInner-moveHalfLeft {
+  animation-name: move-slide-left;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes move-slide-left {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.overlayInner-moveHalfRight {
+  animation-name: move-slide-back-left;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes move-slide-back-left {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#overlayInner > div {
+  flex: 1;
+}
+
+#forms {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+#forms > div {
+  flex: 1;
+  background-color: lightgreen;
+}
+
+#signUpForm,
+#signInForm {
+  overflow: hidden;
+}
+
+#signUpForm .holder {
+  transform: translateX(0);
+  transition-duration: 1s;
+}
+
+#signUpForm.shiftLeft .holder {
+  transform: translateX(-100%);
+  transition-duration: 1s;
+}
+
+#signInForm .holder {
+  transform: translateX(0);
+  transition-duration: 1s;
+}
+
+#signInForm.shiftRight .holder {
+  transform: translateX(100%);
+  transition-duration: 1s;
+}
+#signInForm,
+#signUpForm {
+  border-radius: 20px;
+  text-align: center;
+}
+
+#signInForm h1,
+#signUpForm h1 {
+  margin-top: 4.5rem;
+}
+
+#signInForm .forget
+{
+  display: block;
+  font-size: 0.8rem;
+  margin: 10px 31px;
+  text-decoration: none;
+  border:none;
+}
+#signUpForm p {
+  font-size: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+#signInForm input,
+#signUpForm input {
+  border: none;
+  background-color: #ececec;
+  margin-top: 0.8rem;
+  line-height: 35px;
+  padding: 5px 10px;
+  width: 80%;
+}
+
+#signInForm button,
+#signUpForm button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: red;
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+#signUpForm button {
+  margin: 10px 10px;
+}
+
+#signInForm button:focus,
+#signUpForm button:focus {
+  outline: none;
+}
+
+#signInForm button:active,
+#signUpForm button:active {
+  padding: 9px 38px;
+  transition-duration: 0.1s;
+}
+
+#signInSignUpBox {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.75);
+}
+
+a.social-media-button {
+  display: inline-block;
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: black;
+}
+a.social-media-button:hover
+{
+  background:#999;
+  color:#fff;
+}
+
+#forms > div {
+  background-color: #fff;
+}
+
+#overlay { 
+  background: linear-gradient(to bottom, #2193b0 0%, #6DD58F 100%);
+  border: none;
+  border-radius: 20px;
+}
+
+#signUp,
+#signIn {
+  text-align: center;
+  padding: 140px 40px;
+  color: #fff;
+}
+
+#signUp button,
+#signIn button {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+#signUp button:focus,
+#signIn button:focus {
+  outline: none;
+}
