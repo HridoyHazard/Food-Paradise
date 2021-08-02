@@ -140,7 +140,7 @@
             <li class="list" data-filter="biryani">Biryani</li>
             <li class="list" data-filter="fastfood">FastFood</li>
         </ul>
-        <div class="ps" data-aos="zoom-in">
+        <div class="ps">
             <div class="itemBox dessert" data-cat="dessert"><img src="img/dessert1.jpg"></div>
             <div class="itemBox soup" data-cat="soup"><img src="img/soup1.jpg"></div>
             <div class="itemBox salad" data-cat="salad"><img src="img/salad1.jpg"></div>
@@ -214,43 +214,45 @@
             <div class="box">
                 <img src="img/icon/chef.svg" alt="">
                 <h3>Recipe</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi voluptatem eos nulla iure
-                    dolorem porro expedita deserunt at ea.</p>
+                <p>We offer recipes and cooking advice for Everyone.We are here to help you cook delicious meals with
+                    less stress and more joy.</p>
             </div>
 
             <div class="box">
                 <img src="img/icon/articles.svg" alt="">
                 <h3>Article</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi voluptatem eos nulla iure
-                    dolorem porro expedita deserunt at ea.</p>
+                <p>We give the articles of any recipe.By reading our articles,people can easily learn basic skills of
+                    cooking.People will get a lot of advantages by reading the articles because it will increase their
+                    cooking skills.</p>
             </div>
 
             <div class="box">
                 <img src="img/icon/review.svg" alt="">
                 <h3>Review</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi voluptatem eos nulla iure
-                    dolorem porro expedita deserunt at ea.</p>
+                <p>We give the food reviews of any good restaurant.We try our best not to forget to write a review,
+                    Especially when satisfied with the service and food in a restaurant.</p>
             </div>
 
             <div class="box">
                 <img src="img/icon/quality.svg" alt="">
                 <h3>Premium Membership</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi voluptatem eos nulla iure
-                    dolorem porro expedita deserunt at ea.</p>
+                <p>We provide live cooking courses.We have our premium membership.So people can learn cooking by
+                    joining our live classes.</p>
             </div>
 
             <div class="box">
                 <img src="img/icon/camera.svg" alt="">
                 <h3>Food Photography</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi voluptatem eos nulla iure
-                    dolorem porro expedita deserunt at ea.</p>
+                <p>we provide food photography for restaurants.If a restaurant wants to highlight their featured
+                    recipe,it can hire us for the photoshoot.after the photoshoot we highlight those Photo in our
+                    gallery section.</p>
             </div>
 
             <div class="box">
                 <img src="img/icon/earphones.svg" alt="">
                 <h3>24x7 Support</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi voluptatem eos nulla iure
-                    dolorem porro expedita deserunt at ea.</p>
+                <p>We provide the best user support to our valued users, and We offer 24/7 support.They will get help
+                    and will find answers to questions as soon as possible. </p>
             </div>
         </div>
     </section>
@@ -328,7 +330,13 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 2000,
+            offset: 60, once: false, disable: 'phone', duration: 1500,
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            useClassNames: false,
+            disableMutationObserver: false,
+            debounceDelay: 50,
+            throttleDelay: 99,
         });
     </script>
 
