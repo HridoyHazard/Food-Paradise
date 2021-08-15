@@ -1,6 +1,3 @@
-:root{
-    --green:#6E8A3C;
-}
 * {
     font-family: 'Oswald', sans-serif;
     margin: 0;
@@ -24,7 +21,7 @@ h1 {
 h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
-    color: var(--green);
+    color:#6E8A3C;
 }
 
 html {
@@ -42,7 +39,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #6E8A3C;
+   background: #2F4F4F;
 }
 
 body {
@@ -56,6 +53,7 @@ section {
     padding-top: 8.5rem;
 }
 
+/*Header */
 header {
     position: fixed;
     top: 0;
@@ -74,6 +72,7 @@ header .logo img {
     height: 6rem;
 }
 
+/* Navbar */
 header .navbar a {
     font-size: 1.7rem;
     color: #666;
@@ -95,7 +94,7 @@ header .navbar a:hover {
 }
 
 #home {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-color: rgba(0, 0, 0, 0.2);
     position: relative;
     display: flex;
 }
@@ -132,6 +131,7 @@ header .navbar a:hover {
 .content p {
     color: #F7CA3E;
     font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
 }
 
 .btn {
@@ -147,7 +147,7 @@ header .navbar a:hover {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    height: 3rem;
+    height: 3.5rem;
     width: 10rem;
     background: #FFF;
     margin: 20px;
@@ -169,7 +169,7 @@ header .navbar a:hover {
 .btn:hover::before {
     width: 100%;
 }
-
+/* Recipe */
 .recipe .box-container {
     display: flex;
     align-items: center;
@@ -178,7 +178,6 @@ header .navbar a:hover {
 }
 
 .recipe .box-container .box {
-    /* border:.1rem solid rgba(0,0,0,.1);  */
     margin: 2rem;
     background: #fff;
     width: 32rem;
@@ -186,7 +185,7 @@ header .navbar a:hover {
 }
 
 .recipe .box-container .box:hover {
-    transform: scale(1.1);
+    transform: scale(1.0) !important;
 }
 
 .recipe .box-container .box img {
@@ -272,6 +271,7 @@ header .navbar a:hover {
     color: white;
     transition: all linear .5s;
 }
+/* Gallery */
 
 .gallery {
     display: flex;
@@ -283,7 +283,7 @@ header .navbar a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-section ul {
+.gallery ul {
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -291,7 +291,7 @@ section ul {
     flex-wrap: wrap;
 }
 
-section ul li {
+.gallery ul li {
     list-style: none;
     background-color: #eee;
     padding: 15px 40px;
@@ -303,7 +303,7 @@ section ul li {
     border-radius: 8vh;
 }
 
-section ul li.active {
+.gallery ul li.active {
     background: #03a9fa;
     color: #fff;
 }
@@ -335,8 +335,6 @@ section ul li.active {
 .ps .itemBox:hover img {
     transform: scale(1.1);
 }
-
-/*===================*/
 
 .preview-box {
     position: fixed;
@@ -417,8 +415,7 @@ section ul li.active {
 /* About Us */
 .about
 {
-   /* background:#0C3865; */
-    background:#3D3C3A;
+   background-image: linear-gradient(to right top, #27364e, #3d3c3a); 
 }
 .about h1
 {
@@ -429,6 +426,8 @@ section ul li.active {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: -20px;
+    margin-bottom: 18px;
 }
 
 .about .row .image{
@@ -448,35 +447,37 @@ section ul li.active {
 .about .row .content p{
     color:#aaa;
     font-size: 1.7rem;
-    padding:1rem 0;
+    padding:1rem 2rem;
     text-align: justify;
 }
 .about .ser
 {
     border-top: 1px solid white;
+    padding: 4rem;
 }
 /* Our Service */
-.box-container{
+.about .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.box-container .box{
+.about .box-container .box{
     text-align: center;
     width:30rem;
     margin:2rem;
+    height: 323px;
 }
-.box-container .box img{
+.about .box-container .box img{
     height: 5rem;
 }
 
-.box-container .box h3{
+.about .box-container .box h3{
     font-size: 2rem;
-    color:var(--green);
+    color:#6E8A3C;
 }
 
-.box-container .box p{
+.about .box-container .box p{
     font-size: 1.5rem;
     color:#999;
     padding:1rem 0;
@@ -484,81 +485,82 @@ section ul li.active {
 
 /*Contact US */
 
-.contact .Box {
+.contact .Full {
     display: flex;
     flex-wrap: wrap;
     border-radius: 2rem;
     overflow: hidden;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    margin: 15px 15px;
+    margin: 15px 55px;
 }
 
-.contact .Box .image {
+.contact .Full .image {
     flex: 1 1 40rem;
 }
 
-.contact .Box .image img {
+.contact .Full .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.contact .Box form {
+.contact .Full form {
     flex: 1 1 40rem;
     padding: 2rem 4rem;
     background: rgba(0, 0, 0, 0.1);
 }
 
-.contact .Box form .inputBox {
+.contact .Full form .inputBox {
     padding: 1rem 0;
 }
 
-.contact .Box form .inputBox h3 {
+.contact .Full form .inputBox h3 {
     padding: .5rem 0;
     font-size: 2rem;
+    color: #008080;
 }
 
-.contact .Box form .inputBox input, .contact .Box form .inputBox textarea {
+.contact .Full form .inputBox input, .contact .Full form .inputBox textarea {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.5rem;
     border: .1rem solid rgba(0, 0, 0, .1);
     border-radius: 10px;
 }
-.contact .Box form .inputBox textarea {
+.contact .Full form .inputBox textarea {
     resize: none;
     height: 12rem;
 }
-.box-container{
+.contact .box-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.box-container .box{
-    margin:2rem;
+.contact .box-container .box{
+    margin:2rem 5rem;
     flex:1 1 25rem;
     text-align: justify;
 }
 
-.box-container .box p{
+.contact .box-container .box p{
     font-size: 1.5rem;
     color:#999;
     padding: 0.5rem 0;
 }
 
-.box-container .box i{
+.contact .box-container .box i{
     padding-right: 1rem;
-    color:var(--green);
+    color:#6E8A3C;
 }
 
-.box-container .box h3{
+.contact .box-container .box h3{
     font-size: 2.5rem;
-    color:var(--green);
+    color:#6E8A3C;
     padding:1rem 0;
 }
 
-.box-container .box a{
+.contact .box-container .box a{
     height:5rem;
     width:5rem;
     line-height: 4.8rem;
@@ -569,11 +571,11 @@ section ul li.active {
     color:#aaa;
     margin-right: 1rem;
 }
-.box-container .box .up{
+.contact .box-container .box .up{
     margin: 25px 0px;
 }
 
-.box-container .box a:hover{
+.contact .box-container .box a:hover{
     background:#999;
     color:#fff;
 }
@@ -584,25 +586,22 @@ footer
     text-align: center;
     color: white;
     padding:15px;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 
 /* Media Queries */
 
-@media (max-width:991px) {
+@media only screen and (max-width:991px) {
     html {
         font-size: 55%;
     }
     .home .content {
         padding: 0;
     }
-    #scroll-top {
-        bottom: 3rem;
-    }
 }
 
-@media (max-width:788px) {
+@media only screen and (max-width:788px) {
     #menu {
         display: block;
     }
@@ -645,10 +644,98 @@ footer
     .gallery {
         width: auto;
     }
+    .ps .itemBox {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: block;
+        overflow: hidden;
+        margin: auto auto;
+    }
+    .about .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .about .row .content p{
+        color:#aaa;
+        font-size: 1.8rem;
+        padding:0 2rem;
+        text-align: center;
+        margin-top: -20px;
+    }
 }
 
-@media (max-width:400px) {
+@media only screen and (max-width:550px) {
     html {
         font-size: 50%;
     }
+    #menu {
+        display: block;
+    }
+    header {
+        padding: 2rem 3%;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #f9f9f9;
+        text-align: center;
+        padding: 2rem 0;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+    header .navbar.nav-toggle {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    header .navbar a {
+        display: block;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        font-size: 2.5rem;
+    }
+    header .navbar a:hover {
+        color: #58c93a;
+    }
+    section {
+        padding: 0 3%;
+        padding-top: 9rem;
+    }
+    .home .content {
+        width: auto;
+    }
+    .gallery {
+        width: auto;
+    }
+    .about .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .about .box-container .box{
+        text-align: center;
+        width:30rem;
+        margin:2rem;
+        height: 180px;
+    }
+    .contact .Full .image img {
+        display: none;
+    }
+    .ps .itemBox {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: block;
+        overflow: hidden;
+        margin: auto auto;
+    }
+
 }
