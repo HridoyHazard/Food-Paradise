@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Food Paradies</title>
+    <title>Food Paradise</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">">
@@ -43,7 +43,7 @@ session_start();
         </div>
 
         <div class="content">
-            <h1>Welcome To Food Paradies</h1>
+            <h1>Welcome To Food Paradise</h1>
             <p>A Complete Food Related Website Along With Various Different Culture Foods of various Categroies.Also
                 There Are Various Food Recipes, Articles,Video Tutorials</p>
         </div>
