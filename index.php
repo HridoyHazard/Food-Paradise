@@ -1,3 +1,7 @@
+<?php 
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -26,7 +30,7 @@
             <a href="#gallery">Gallery</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <a href="signup.html">Sign Up</a>
+            <a href="sign.php">Sign Up</a>
         </nav>
 
     </header>
@@ -202,6 +206,7 @@
                     website on something of our interest. So, we decided to team up instantly, and no wonder the idea
                     was already there! </p>
                     <div class="up"></div>
+                <a href="#"><button class="btn">learn more</button></a>
             </div>
 
 

@@ -25,16 +25,25 @@ body {
   position: relative;
   overflow: hidden;
   background-color: yellow;
+  background: linear-gradient(to bottom, #2193b0 0%, #6DD58F 100%);
+  border: none;
+  border-radius: 20px;
 }
 
 #signUp {
   transform: translateX(0);
   transition-duration: 1s;
+  text-align: center;
+  padding: 140px 40px;
+  color: #fff;
 }
 
 #signIn {
   transform: translateX(20%);
   transition-duration: 1s;
+  text-align: center;
+  padding: 140px 40px;
+  color: #fff;
 }
 
 .overlay-moveHalfRight #signIn {
@@ -186,8 +195,8 @@ body {
   width: 80%;
 }
 
-#signInForm button,
-#signUpForm button {
+#signInForm input:last-child,
+#signUpForm input:last-child {
   text-transform: uppercase;
   color: #fff;
   background-color: red;
@@ -195,23 +204,10 @@ body {
   border: 1px solid #FF4B2B;
   padding: 10px 40px;
   cursor: pointer;
-}
-
-#signUpForm button {
   margin: 10px 10px;
+  line-height: 10px;
+  width: 32%;
 }
-
-#signInForm button:focus,
-#signUpForm button:focus {
-  outline: none;
-}
-
-#signInForm button:active,
-#signUpForm button:active {
-  padding: 9px 38px;
-  transition-duration: 0.1s;
-}
-
 #signInSignUpBox {
   background-color: #fff;
   border-radius: 20px;
@@ -237,20 +233,6 @@ a.social-media-button:hover
 #forms > div {
   background-color: #fff;
 }
-
-#overlay { 
-  background: linear-gradient(to bottom, #2193b0 0%, #6DD58F 100%);
-  border: none;
-  border-radius: 20px;
-}
-
-#signUp,
-#signIn {
-  text-align: center;
-  padding: 140px 40px;
-  color: #fff;
-}
-
 #signUp button,
 #signIn button {
   margin-top: 20px;
