@@ -15,28 +15,28 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
 
 Tools:
 
-*HTML
-*CSS
-*Bootstrap
-*JavaScript
-*JQuery
-*PHP
-*MySQL
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* JQuery
+* PHP
+* MySQL
 
 
 
 Project Features:
 
-*Full responsive 
-*User Sign in/ Sign up option 
-*Food Related Info, Videos, Photos.
-*Learning Section: user can learn about cooking and recipe.
-*Provides Technical Support.
-*Admin Panel/Author Services.
-*Different Categories for Easy Accessing.
-*User Can Get Their Desired Services from Services Section
-*Create, Read, Update and Delete system in Services Section
-*Pdf and Printing of Receipt 
+* Full responsive 
+* User Sign in/ Sign up option 
+* Food Related Info, Videos, Photos.
+* Learning Section: user can learn about cooking and recipe.
+* Provides Technical Support.
+* Admin Panel/Author Services.
+* Different Categories for Easy Accessing.
+* User Can Get Their Desired Services from Services Section
+* Create, Read, Update and Delete system in Services Section
+* Pdf and Printing of Receipt 
 
 
 Conclusion:
