@@ -41,6 +41,15 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
 * Create, Read, Update and Delete system in Services Section
 * Pdf and Printing of Receipt 
 
+## **User Interface**:
+<p align="center">
+  <b>Registration Form</b><br>
+    <img src="ss/signup.jpg">
+   <b> User Login</b><br>
+    <img src="ss/login.jpg">
+
+</p>
+
 
 ## **Conclusion**:
 
