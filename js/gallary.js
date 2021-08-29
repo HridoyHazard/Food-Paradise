@@ -6,7 +6,7 @@ class gallary{
 	modal(){
 		const parent = document.getElementsByClassName('ps')[0].addEventListener('click',(e)=>{
 			if(e.target.parentElement.classList.contains('itemBox')){
-				// e.target.parentElement.classList.add('active')
+				
 				const cat = e.target.parentElement.getAttribute('data-cat')
 				const src = e.target.parentElement.children
 				let imgsrc;
@@ -16,7 +16,7 @@ class gallary{
 					}
 				}
 				this.createElement(imgsrc,cat)
-				// this.style();
+				
 				 document.querySelector('.icon').addEventListener('click',(e)=>{
 				 	this.removeStyle();
 					

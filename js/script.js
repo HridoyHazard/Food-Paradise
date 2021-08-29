@@ -36,7 +36,7 @@ class loveLooks{
 		for(let i = 0; i<allLInk.length; i++){
 			if(allLInk[i].classList.contains('fa-heart') || allLInk[i].classList.contains('fa-eye')){
 			allLInk[i].addEventListener('click',(event)=>{
-				// for react button
+				
 				if(allLInk[i].classList.contains('fa-heart')){
 					allLInk[i].classList.toggle('liked')
 				}else if(allLInk[i].classList.contains('fa-eye')){
