@@ -14,6 +14,7 @@ Benefit:
 This Project Helps You To Get Better Knowledge About Different Culture of Foods,Different Ways of Cooking,Gives Virtual Taste of Different Foods and Their Recipes.A User Can Post Recipes,Reviews And Articles of their Respective Foods and Everyone can increases their knowledge about foods by themselves.By Seeing Our Project Videos Recipe People will be Able to Make Delicious Foods From Home.
 
 Tools:
+
 *HTML
 *CSS
 *Bootstrap
