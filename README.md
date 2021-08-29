@@ -1,4 +1,4 @@
-<h1 align="center" color="yellow"> Food Paradise </h1>
+<h1 align="center" > Food Paradise </h1>
                                                         
 
 ## **Project Summary**:
@@ -42,7 +42,7 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
 * Pdf and Printing of Receipt 
 
 ## **User Interface**:
-<p align="center" font-size="18px">
+<p align="center">
   <b>Registration Form</b><br>
     <img src="ss/signup.jpg">
    <b> User Login</b><br>
