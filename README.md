@@ -42,7 +42,7 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
 * Pdf and Printing of Receipt 
 
 ## **User Interface**:
-<p align="center">
+<p align="center" font-size="18px">
   <b>Registration Form</b><br>
     <img src="ss/signup.jpg">
    <b> User Login</b><br>
@@ -59,8 +59,18 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
     <img src="ss/filter.jpg">
     <b> About Us</b><br>
     <img src="ss/about%20us.jpg">
-    <b> Recipes</b><br>
-    <img src="ss/recipe.jpg">
+    <b> Services</b><br>
+    <img src="ss/services.jpg">
+    <b> Add Services</b><br>
+    <img src="ss/add.jpg">
+    <b> Edit Services</b><br>
+    <img src="ss/edit.jpg">
+    <b> Delete Services</b><br>
+    <img src="ss/delete.jpg">
+    <b> Search</b><br>
+    <img src="ss/search.jpg">
+    <b> Pdf Receipt</b><br>
+    <img src="ss/pdf.jpg">
 
 </p>
 
