@@ -1,4 +1,4 @@
-<h1 align="center"> Food Paradise </h1>
+<h1 align="center" color="yellow"> Food Paradise </h1>
                                                         
 
 ## **Project Summary**:
