@@ -24,6 +24,7 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
 * JavaScript
 * JQuery
 * PHP
+* CodeIgniter
 * MySQL
 
 
@@ -39,6 +40,7 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
 * Different Categories for Easy Accessing.
 * User Can Get Their Desired Services from Services Section
 * Create, Read, Update and Delete system in Services Section
+* Searching Option In the List
 * Pdf and Printing of Receipt 
 
 ## **User Interface**:
