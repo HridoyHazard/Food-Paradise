@@ -47,6 +47,20 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
     <img src="ss/signup.jpg">
    <b> User Login</b><br>
     <img src="ss/login.jpg">
+    <b> After Login</b><br>
+    <img src="ss/logout.jpg">
+    <b> HomePage</b><br>
+    <img src="ss/home.jpg">
+    <b> Recipes</b><br>
+    <img src="ss/recipe.jpg">
+    <b> Gallery</b><br>
+    <img src="ss/gallery.jpg">
+    <b> Filter Dessert</b><br>
+    <img src="ss/filter.jpg">
+    <b> About Us</b><br>
+    <img src="ss/about%20us.jpg">
+    <b> Recipes</b><br>
+    <img src="ss/recipe.jpg">
 
 </p>
 
