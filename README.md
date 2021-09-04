@@ -31,7 +31,7 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
 
 ## **Project Features**:
 
-* Full responsive 
+* Full Responsive 
 * User Sign in/ Sign up option 
 * Food Related Info, Videos, Photos.
 * Learning Section: user can learn about cooking and recipe.
