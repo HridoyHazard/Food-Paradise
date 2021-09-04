@@ -61,6 +61,8 @@ This Project Helps You To Get Better Knowledge About Different Culture of Foods,
     <img src="ss/filter.jpg">
     <b> About Us</b><br>
     <img src="ss/about%20us.jpg">
+    <b> Contact Us</b><br>
+    <img src="ss/contact us.jpg">
     <b> Services</b><br>
     <img src="ss/services.jpg">
     <b> Add Services</b><br>
