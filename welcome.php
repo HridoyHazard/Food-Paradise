@@ -1,8 +1,8 @@
 <?php 
  session_start();
- if(!isset($_SESSION[username])){
- header('Location: sign.html');
-}
+ if(!isset($_SESSION['username']) && $_SESSION['logged'] != true){
+ 	header("Location: sign.php");
+ }
 ?>
 
 <!DOCTYPE html>

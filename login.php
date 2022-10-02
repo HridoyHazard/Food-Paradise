@@ -6,22 +6,44 @@ session_start();
 
 error_reporting(0);
 
-if (isset($_POST['submit'])) {
-	$username = $_POST['username'];
-	$password = md5($_POST['password']);
+if (isset($_POST['submit']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
-	$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-	$result = mysqli_query($conn, $sql);
-	if ($result->num_rows > 0) {
-		$row = mysqli_fetch_assoc($result);
-		$_SESSION['username'] = $row['username'];
-		header("Location: welcome.php");
-	} else {
-        echo '<script>
+	$username = $dbconn->real_escape_string(htmlspecialchars($_POST['username']));
+	$password = $dbconn->real_escape_string(htmlspecialchars($_POST['password']));
+
+	$check = $conn->prepare("SELECT * FROM users WHERE username = ?");
+	$check->bind_param('s', $username);
+
+	if ($check->execute()){
+		$result = $check->get_result();
+		$checkNum = $result->num_rows;
+		if ($checkNum != 1){
+			echo '<script>
 				alert("Woops! Email or Password is Wrong.")
 				window.location.href = "sign.php";
 			</script>';
+		} else {
+			$output = $result->fetch_assoc();
+			if (password_verify($password, $output['password'])) {
+				$_SESSION['username'] = $output['username'];
+				$_SESSION['email'] = $output['email'];
+				$_SESSION['logged'] = true;
+				header("Location: welcome.php");
+			} else {
+				echo '<script>
+					alert("Woops! Email or Password is Wrong.")
+					window.location.href = "sign.php";
+				</script>';
+			}
+		}
+	} else {
+		echo '<script>
+			alert("Woops! Something Went Wrong.")
+			window.location.href = "sign.php";
+		</script>';
 	}
+} else {
+	header("Location: index.php");
 }
 
 ?>
