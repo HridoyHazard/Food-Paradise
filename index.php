@@ -44,7 +44,7 @@ session_start();
 
         <div class="content">
             <h1>Welcome To Food Paradise</h1>
-            <p>A Complete Food Related Website Along With Various Different Culture Foods of various Categroies.Also
+            <p>A Complete Food Related Website Along With Various Different Culture Foods of various Categories.Also,
                 There Are Various Food Recipes, Articles,Video Tutorials</p>
         </div>
 
@@ -60,7 +60,7 @@ session_start();
 
             <div class="box" data-aos="fade-left">
                 <img src="img/p1.jpg" alt="">
-                <h3>Chicken Chowmin</h3>
+                <h3>Chicken Chowmein</h3>
                 <div class="icons">
                     <a href="https://natashaskitchen.com/chicken-chow-mein/" class="far fa-newspaper"></a>
                     <a href="#" class="fas fa-eye"></a>
@@ -186,7 +186,7 @@ session_start();
     <!-- About Us Section-->
     <section class="about" id="about">
 
-        <h1>about us</h1>
+        <h1>About us</h1>
 
         <div class="row">
 
@@ -196,7 +196,7 @@ session_start();
 
             <div class="content" data-aos="fade-up">
                 <p>We are two undergrad students majoring in Computer Science and Engineering. My friend and I share
-                    some common interests that include hanging out to different restaurants in the town, checking out
+                    some common interests that include hanging out at different restaurants in the town, checking out
                     different cuisines, talking hours and hours about food, and sometimes writing reviews on them on
                     social media platforms. These reviews were primarily intended for the fellow foodies. Still, they
                     were being appreciated by anyone who would read them, and many of the restaurant owners suggested
